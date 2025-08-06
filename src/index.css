@@ -2,12 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* TodoHive Design System - Beautiful gradients and modern colors */
 
 @layer base {
   :root {
+    /* TodoHive Brand Colors */
+    --primary: 262 83% 58%;
+    --primary-foreground: 0 0% 100%;
+    
+    /* Gradient Backgrounds */
+    --gradient-main: linear-gradient(135deg, hsl(262 83% 58%), hsl(326 82% 62%), hsl(33 100% 70%));
+    --gradient-card: linear-gradient(135deg, rgba(255,255,255,0.95), rgba(255,255,255,0.85));
+    --gradient-button: linear-gradient(135deg, hsl(262 83% 58%), hsl(302 84% 61%));
+    
+    /* Background and surfaces */
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
 
@@ -17,17 +25,24 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Task Categories */
+    --category-project: 221 83% 53%;
+    --category-work: 142 76% 36%;
+    --category-daily: 262 83% 58%;
+    --category-groceries: 33 100% 50%;
+    
+    /* Card backgrounds */
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    
+    --secondary: 262 15% 95%;
+    --secondary-foreground: 262 83% 58%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
+    --muted: 220 14% 96%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 262 83% 58%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;

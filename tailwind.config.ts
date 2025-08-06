@@ -28,6 +28,12 @@ export default {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'
 				},
+				category: {
+					project: 'hsl(var(--category-project))',
+					work: 'hsl(var(--category-work))',
+					daily: 'hsl(var(--category-daily))',
+					groceries: 'hsl(var(--category-groceries))'
+				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
 					foreground: 'hsl(var(--secondary-foreground))'
